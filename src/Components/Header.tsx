@@ -37,7 +37,7 @@ const NavItem: FC<INavItemProps> = ({ item, index, active }) => {
         {item.dropdown && (
           <>
             <div
-              className={`absolute top-8 w-48 ${isDropdown ? " max-h-0 p-0 " : "p-4"}  bg-white text-black shadow-md shadow-green-400 transition-all duration-300 overflow-hidden`}
+              className={`absolute top-8 w-48 ${!isDropdown ? " max-h-0 p-0 " : "p-4"}  bg-white text-black shadow-md shadow-green-400 transition-all duration-300 overflow-hidden`}
             >
               {item.dropdownOptions?.map((item: any, index) => (
                 <div className="py-2 hover:text-green-400 transition-all duration-300 hover:pb-1 hover:border-b-2 border-green-400">
