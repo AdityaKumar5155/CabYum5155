@@ -26,7 +26,7 @@ const NavItem: FC<INavItemProps> = ({ item, index, active }) => {
   return (
     <>
       <div
-        className="relative hover:text-green-400 transition-all duration-300 hover:pb-1 hover:border-b-2 border-green-400"
+        className="relative  hover:text-green-400 transition-all duration-300 hover:pb-1 hover:border-b-2 border-green-400"
         onClick={item.dropdown ? toggleDropdown : () => {}}
       >
         <Link key={index} to={item.dropdown ? "#" : item.link}>
@@ -58,7 +58,7 @@ const NavItem: FC<INavItemProps> = ({ item, index, active }) => {
 
 const Header = () => {
   return (
-    <div className="absolute top-0 z-50 flex justify-center items-center h-16 w-full  shadow-md shadow-green-300">
+    <div className="fixed top-0 z-50 flex justify-center items-center h-16 w-full  shadow-md shadow-green-300 bg-white">
       <div className="flex relative items-center px-6 w-full lg:w-4/5 h-16 justify-center">
         <div className="flex items-center absolute left-0">
           <img src="cabyum.png" className="w-12" alt="" />{" "}
