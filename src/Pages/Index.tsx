@@ -1,4 +1,3 @@
-import Footer from "../Components/Footer"
 
 import Popular from "../Components/Popular"
 import Restaurants from "../Components/Restaurants"
@@ -15,7 +14,7 @@ const Index = () => {
         <Woym />
         <Popular city="Patna" />
         <Restaurants city="Patna" />
-        <Footer />
+        
         </div>
     </>
   )

@@ -2,7 +2,6 @@
 import Welcome from '../Components/Welcome'
 import LeftAboutUs from '../Components/LeftAboutUs'
 import RightAboutUs from '../Components/RightAboutUs'
-import Footer from '../Components/Footer'
 import CareerForm from '../Components/CareerForm'
 
 const Career = () => {
@@ -14,7 +13,6 @@ const Career = () => {
         <RightAboutUs />
         <LeftAboutUs />
         <RightAboutUs />
-        <Footer />
     </>
   )
 }

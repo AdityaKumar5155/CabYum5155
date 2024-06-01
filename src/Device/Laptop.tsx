@@ -5,6 +5,8 @@ import Service from "../Pages/Service"
 import RLOverlay from "../Components/RLOverlay"
 import { useState } from "react"
 import Career from "../Pages/Career"
+import ContactUs from "../Pages/ContactUs"
+import Footer from "../Components/Footer"
 
 const Laptop = () => {
   const [loggedIn, _] = useState<Boolean>(false)
@@ -17,7 +19,9 @@ const Laptop = () => {
           <Route index element={<Index />} />
           <Route path="/service" element={<Service />} />
           <Route path="/career" element={<Career />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
+        <Footer />
     </>
   )
 }
