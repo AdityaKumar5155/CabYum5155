@@ -7,8 +7,7 @@ import { useState } from "react"
 import Career from "../Pages/Career"
 
 const Laptop = () => {
-  const [loggedIn, setLoggedIn] = useState<Boolean>(false)
-  setLoggedIn(false)
+  const [loggedIn, _] = useState<Boolean>(false)
   const [toggleOverlay, setOverlay] = useState<Boolean>(false)
   return (
     <>
