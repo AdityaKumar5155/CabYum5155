@@ -52,15 +52,15 @@ const Popular : FC<IPopularProps>= ({city}) => {
   },[button]);
   return (
     <>
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full ">
     <div className="min-w-920 lg:w-3/5 xs:w-full m-3">
     <div className="relative w-full">
-      <div className="flex text-2xl font-bold mb-2 w-full">
+      <div className="flex text-2xl font-bold mb-2 w-full text-orange-600">
       {`Top restaurant chains in ${city}`}
-        <div className="absolute right-0">
+        <div className="absolute right-0 text-white">
         <div className="flex w-[70px] justify-between text-sm">
-        <button disabled={!!start} className="rounded-full bg-gray-300 w-8 h-8 flex items-center justify-center" > <FontAwesomeIcon  onClick={()=>{scrollLeft()}} icon="arrow-left"/> </button>
-        <button disabled={!!end} className="rounded-full bg-gray-300 w-8 h-8 flex items-center justify-center"> <FontAwesomeIcon onClick={()=>{scrollRight()}} icon="arrow-right"/> </button>
+        <button disabled={!!start} className="rounded-full bg-orange-600 w-8 h-8 flex items-center justify-center" > <FontAwesomeIcon  onClick={()=>{scrollLeft()}} icon="arrow-left"/> </button>
+        <button disabled={!!end} className="rounded-full bg-orange-600 w-8 h-8 flex items-center justify-center"> <FontAwesomeIcon onClick={()=>{scrollRight()}} icon="arrow-right"/> </button>
         </div>
         </div>
         </div>

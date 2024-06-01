@@ -5,11 +5,11 @@ export const navItems = [
     },
     {
         name: 'Career',
-        link: '/'
+        link: '/career'
     },
     {
         name: 'Services',
-        link: '/',
+        link: '#',
         dropdown: true,
         dropdownOptions: [
             {
@@ -18,7 +18,7 @@ export const navItems = [
             },
             {
                 name: 'Food Delivery',
-                link: '/foodDelivery'
+                link: '/service'
             },
             {
                 name: 'Parcel Delivery',

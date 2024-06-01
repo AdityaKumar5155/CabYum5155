@@ -56,7 +56,7 @@ const NavItem: FC<INavItemProps> = ({ item, index, active }) => {
   );
 };
 
-const Header = () => {
+const Header = ({setOverlay} : any) => {
   return (
     <div className="fixed top-0 z-50 flex justify-center items-center h-16 w-full  shadow-md shadow-green-300 bg-white">
       <div className="flex relative items-center px-6 w-full lg:w-4/5 h-16 justify-center">
@@ -71,7 +71,7 @@ const Header = () => {
             <NavItem index={index} active={"active"} item={item} />
           ))}
         </div>
-        <div className="absolute flex items-center right-0">
+        <div className="absolute flex items-center right-0" onClick={()=>{setOverlay(true)}}>
           <div>Sign In</div>
           <div className="ml-4 rounded-full relative flex overflow-hidden border-2 border-black h-12 w-12">
             <img src="cabyum.png" alt="" className="" />
