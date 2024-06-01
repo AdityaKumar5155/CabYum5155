@@ -8,6 +8,7 @@ import Career from "../Pages/Career"
 
 const Laptop = () => {
   const [loggedIn, setLoggedIn] = useState<Boolean>(false)
+  setLoggedIn(false)
   const [toggleOverlay, setOverlay] = useState<Boolean>(false)
   return (
     <>
